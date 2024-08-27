@@ -3,7 +3,7 @@ import CountdownTimer from './countdown-timer'
 
 function App() {
   return (
-    <CountdownTimer/>
+    <CountdownTimer timerStart={60}/>
   )
 }
 
