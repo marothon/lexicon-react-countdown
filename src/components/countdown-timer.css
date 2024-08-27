@@ -1,3 +1,13 @@
 .countdown-container{
     text-align: center;
+    width: 20rem;
+
+    .button-container {
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        width: 12rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+
+    }
 }

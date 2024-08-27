@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import './countdown-timer.css';
+import DigitalDisplay from './digital-display';
 
 function CountdownTimer({timerStart}: {timerStart: number}) {
     const [timeLeft, setTimeLeft] = useState(timerStart);
@@ -27,14 +28,15 @@ function CountdownTimer({timerStart}: {timerStart: number}) {
 
     return (
         <div className="countdown-container">
-            <h1>{timeLeft == 0 ? "Time's up!" : 'Countdown'}</h1>
-            <h2>{timeLeft}</h2>
-            <button className='material-symbols-outlined' onClick={()=>{setIsActive(a => !a)}}>
-                {isActive ? 'pause' : 'play_arrow'}
-            </button>
-            <button className='material-symbols-outlined' onClick={()=>{setTimeLeft(timerStart)}}>
-                restart_alt
-            </button>
+            <DigitalDisplay totalSeconds={timeLeft}/>
+            <div className="button-container">
+                <button className='material-symbols-outlined' onClick={()=>{setIsActive(a => !a)}}>
+                    {isActive ? 'pause' : 'play_arrow'}
+                </button>
+                <button className='material-symbols-outlined' onClick={()=>{setTimeLeft(timerStart)}}>
+                    restart_alt
+                </button>
+            </div>
         </div>
     );
 }

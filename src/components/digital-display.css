@@ -1,0 +1,19 @@
+.digital-display{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    color: red;
+    background-color: black;
+    width: 10rem;
+    margin: auto;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    > span {
+        text-align: center;
+        width: 2rem;
+    }
+}
