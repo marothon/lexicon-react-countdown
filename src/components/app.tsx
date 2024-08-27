@@ -1,8 +1,9 @@
 import './App.css'
+import CountdownTimer from './countdown-timer'
 
 function App() {
   return (
-    <h1>Hello world!</h1>
+    <CountdownTimer/>
   )
 }
 
