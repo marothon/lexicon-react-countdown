@@ -16,4 +16,20 @@
         text-align: center;
         width: 2rem;
     }
+
+    &.at-zero {
+        animation: flashing-color 0.4s linear 3;       
+    }
+}
+
+@keyframes flashing-color {
+    0% {
+        color: red
+    }   
+    50% {
+        color: rgb(255, 0, 0, 0);;
+    }
+    100% {
+        color: red
+    }
 }
