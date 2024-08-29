@@ -50,7 +50,7 @@ function CountdownTimer() {
     return (
         <div className="countdown-container">
              <form className="new-countdown-form" onSubmit={updateDuration}>
-                <input name="timerStart" type="number" placeholder='Enter duration (s)'/>
+                <input required name="timerStart" type="number" placeholder='Enter duration (s)'/>
             </form>
             <DigitalDisplay totalSeconds={timeLeft}/>
             <div className="button-container">
